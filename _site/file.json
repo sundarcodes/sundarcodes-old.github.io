@@ -1,0 +1,177 @@
+[
+{
+    "icon_class_name": "devicon-cplusplus-plain-wordmark", 
+    "id": "1", 
+    "scale": "7", 
+    "skill_category_id": "1", 
+    "skill_name": "C++"
+},
+{
+    "icon_class_name": "devicon-python-plain-wordmark", 
+    "id": "2", 
+    "scale": "7", 
+    "skill_category_id": "1", 
+    "skill_name": "Python"
+},
+{
+    "icon_class_name": "devicon-c-plain-wordmark", 
+    "id": "3", 
+    "scale": "6", 
+    "skill_category_id": "1", 
+    "skill_name": "C"
+},
+{
+    "icon_class_name": "devicon-ruby-plain-wordmark", 
+    "id": "4", 
+    "scale": "6", 
+    "skill_category_id": "1", 
+    "skill_name": "Ruby"
+},
+{
+    "icon_class_name": "devicon-java-plain-wordmark", 
+    "id": "5", 
+    "scale": "6", 
+    "skill_category_id": "1", 
+    "skill_name": "Java"
+},
+{
+    "icon_class_name": "devicon-javascript-plain", 
+    "id": "6", 
+    "scale": "5", 
+    "skill_category_id": "1", 
+    "skill_name": "JavaScript"
+},
+{
+    "icon_class_name": "", 
+    "id": "7", 
+    "scale": "6", 
+    "skill_category_id": "2", 
+    "skill_name": "Object Oriented Principles"
+},
+{
+    "icon_class_name": "", 
+    "id": "8", 
+    "scale": "6", 
+    "skill_category_id": "2", 
+    "skill_name": "Design Patterns"
+},
+{
+    "icon_class_name": "", 
+    "id": "9", 
+    "scale": "6", 
+    "skill_category_id": "2", 
+    "skill_name": "Agile"
+},
+{
+    "icon_class_name": "", 
+    "id": "10", 
+    "scale": "6", 
+    "skill_category_id": "2", 
+    "skill_name": "Scrum"
+},
+{
+    "icon_class_name": "devicon-angularjs-plain-wordmark", 
+    "id": "11", 
+    "scale": "7", 
+    "skill_category_id": "3", 
+    "skill_name": "Angular JS"
+},
+{
+    "icon_class_name": "devicon-rails-plain-wordmark", 
+    "id": "12", 
+    "scale": "7", 
+    "skill_category_id": "3", 
+    "skill_name": "Rails"
+},
+{
+    "icon_class_name": "", 
+    "id": "13", 
+    "scale": "6", 
+    "skill_category_id": "3", 
+    "skill_name": "Ionic"
+},
+{
+    "icon_class_name": "devicon-ruby-plain-wordmark", 
+    "id": "14", 
+    "scale": "6", 
+    "skill_category_id": "3", 
+    "skill_name": "Ruby"
+},
+{
+    "icon_class_name": "", 
+    "id": "15", 
+    "scale": "6", 
+    "skill_category_id": "4", 
+    "skill_name": "Github"
+},
+{
+    "icon_class_name": "devicon-atom-original-wordmark", 
+    "id": "16", 
+    "scale": "6", 
+    "skill_category_id": "4", 
+    "skill_name": "Atoms"
+},
+{
+    "icon_class_name": "devicon-bootstrap-plain-wordmark", 
+    "id": "18", 
+    "scale": "6", 
+    "skill_category_id": "3", 
+    "skill_name": "Bootstrap"
+},
+{
+    "icon_class_name": "devicon-html5-plain-wordmark", 
+    "id": "19", 
+    "scale": "6", 
+    "skill_category_id": "5", 
+    "skill_name": "HTML5"
+},
+{
+    "icon_class_name": "devicon-css3-plain-wordmark", 
+    "id": "20", 
+    "scale": "6", 
+    "skill_category_id": "5", 
+    "skill_name": "CSS"
+},
+{
+    "icon_class_name": "devicon-angularjs-plain-wordmark", 
+    "id": "21", 
+    "scale": "5", 
+    "skill_category_id": "5", 
+    "skill_name": "Angular JS"
+},
+{
+    "icon_class_name": "devicon-jquery-plain-wordmark", 
+    "id": "22", 
+    "scale": "3", 
+    "skill_category_id": "5", 
+    "skill_name": "Jquery"
+},
+{
+    "icon_class_name": "devicon-javascript-plain", 
+    "id": "23", 
+    "scale": "4", 
+    "skill_category_id": "5", 
+    "skill_name": "Javascript"
+},
+{
+    "icon_class_name": "", 
+    "id": "24", 
+    "scale": "5", 
+    "skill_category_id": "3", 
+    "skill_name": "Jekyll"
+},
+{
+    "icon_class_name": "devicon-mongodb-plain-wordmark", 
+    "id": "25", 
+    "scale": "4", 
+    "skill_category_id": "6", 
+    "skill_name": "MongoDB"
+},
+{
+    "icon_class_name": "devicon-mysql-plain-wordmark", 
+    "id": "26", 
+    "scale": "4", 
+    "skill_category_id": "6", 
+    "skill_name": "MySQL"
+}
+]

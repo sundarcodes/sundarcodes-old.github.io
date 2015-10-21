@@ -1,0 +1,40 @@
+#about{
+  background-color: #fff;
+  height:100vh;
+  width: 100vw;
+  padding: 0;
+}
+
+img{
+  height:20vw;
+  width:20vw;
+}
+
+.right-social-link
+{
+  position: absolute;
+  left:20%;
+}
+
+
+.left-social-link
+{
+  position: absolute;
+  //top:32%;
+  right:20%;
+  //float:right;
+}
+.social_icons{
+  font-size:3.5vmin;
+  height:2vh;
+  margin:4vh;
+}
+
+.vcenter{
+  @include vertical-center;
+}
+
+.col{
+  height:80vh;
+  max-height:90vh;
+}

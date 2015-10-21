@@ -1,0 +1,54 @@
+body{
+  font-family: $primary-font-family;
+  font-color:$primary-font-color;
+  font-size: 1.5em;
+
+}
+
+#home{
+  background: url("../images/scene1.jpg");
+  height:100vh;
+  width: 100vw;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment:fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+
+#myNavbar{
+padding-right: 2vw; 
+}
+
+#myNavbar ul li a{
+  color:$link-font-color;
+  &:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in;
+  }
+  &, &:hover, &:visited, &:active {
+       color: $link-font-color;
+       text-decoration: none;
+       transition: transform 0.3s ease-out;
+     }
+}
+
+h2{
+  font-family: $cursive-font-family;
+}
+
+#brandName{
+  color:$link-font-color;
+  &:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in;
+  }
+  &, &:hover, &:visited, &:active {
+       color: $link-font-color;
+       text-decoration: none;
+       transition: transform 0.3s ease-out;
+     }
+}
