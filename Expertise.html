@@ -1,0 +1,51 @@
+---
+layout: page
+title: My Expertise
+permalink: /expertise/
+position: 3
+id: expertise
+---
+
+<div class="container">
+  <div class="row">
+    <aside class="col col-xs-5">
+      <div class="vcenter skill-categories">
+        {% assign skill_categories = site.data.skill_categories %}
+        <div class="list-group" id="categories">
+          {% for category in skill_categories %}
+          <a href="#" class="list-group-item" data-target="#skills-{{category.id}}">{{category.name}}
+            {% assign skills = site.data.Skills %}
+            {% assign counter = '' %}
+              {% for skill in skills %}
+                {% if skill.skill_category_id == category.id %}
+                {% capture temp %}{{ counter }}*{% endcapture %}
+                {% assign counter = temp %}
+                {% endif %}
+              {% endfor %}
+            <span class="badge">{{counter.size}}</span>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </aside>
+    <section class="col col-xs-7">
+      <div class="vcenter skill-lists" id="skills">
+      {% assign skill_categories = site.data.skill_categories %}
+      {% for category in skill_categories %}
+        <ul class="list-group hidden" id="skills-{{category.id}}">
+          {% assign skills = site.data.Skills %}
+            {% for skill in skills %}
+              {% if skill.skill_category_id == category.id %}
+              <li class="list-group-item" >
+                <i class="{{skill.icon_class_name}} devicon-size">
+                </i>
+                {{skill.skill_name}}
+              </li>
+              {% endif %}
+            {% endfor %}
+        </ul>
+    {% endfor %}
+      </div>
+    </section>
+  </div>
+</div>

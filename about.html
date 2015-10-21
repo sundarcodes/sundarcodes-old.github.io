@@ -1,0 +1,59 @@
+---
+layout: page
+title: About Me
+permalink: /about/
+position: 1
+id: about
+---
+<div class="container">
+  <div class="row">
+    <section class="col-sm-4 text-center col">
+      <div class="vcenter">
+        <h2>About me</h2>
+        <div class="well well-lg">
+          {% assign about_me_text = site.data.about %}
+          {% for line in about_me_text %}
+          <p>{{line.para}}</p>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+    <section class="col-sm-4 col text-center">
+      <div class="vcenter">
+        <div class="social_icons">
+            <a href="http://sundarcodes.github.io/" class="left-social-link">
+              <i class="fa fa-github">
+              </i>
+            </a>
+            <a href="https://www.linkedin.com/profile/view?id=AAIAAAOVijgBYZm_rEO26me9nLXxEu1yAZT4tfs&trk=nav_responsive_tab_profile" class="right-social-link">
+              <i class="fa fa-linkedin">
+              </i>
+            </a>
+        </div>
+        <img src="{{ "/images/Sundar.JPG" | prepend: site.baseurl }}" alt="My picture" class="img-circle img-responsive center-block"/>
+        <div class="social_icons">
+          <a href="https://www.facebook.com/sundararaman.vaidyanathan.9?ref=br_rs" class="left-social-link">
+            <i class="fa fa-facebook">
+            </i>
+          </a>
+          <a href="https://twitter.com/sundar_says" class="right-social-link">
+            <i class="fa fa-twitter">
+            </i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="col-sm-4 col text-center">
+        <div class="vcenter">
+          {% assign quotes = site.data.quotes %}
+          <h2> My favourite gyans..</h2>
+            {% for line in quotes %}
+          <div class="well well-sm">
+            <q>{{line.quote}}</q>
+            <em>{{line.by}}</em>
+          </div>
+          {% endfor %}
+        </div>
+    </section>
+  </div>
+</div>

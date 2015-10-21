@@ -1,0 +1,38 @@
+#blog{
+  height:100vh;
+  width: 100vw;
+  padding: 0;
+}
+
+
+.img-container{
+  height:40vh;
+  text-align: center;
+}
+
+.img-class{
+  display: block;
+  left: 50%;
+  position: relative;
+  height: 100%;
+  transform: translateX(-50%);
+  width: 30vw;
+}
+
+h3{
+  a{
+    text-decoration: none;
+
+}
+}
+
+.blog-date{
+  height:10vmin;
+  width:10vmin;
+  border-radius:50%;
+  background-color: #2c3e50;
+  text-align: center;
+  color:$white;
+  font-size:1em;
+  margin:5px auto;
+}

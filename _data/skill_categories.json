@@ -1,0 +1,26 @@
+[
+{
+    "id": "1",
+    "name": "Programming Languages"
+},
+{
+    "id": "2",
+    "name": "Programming pardigms"
+},
+{
+    "id": "3",
+    "name": "Frameworks"
+},
+{
+    "id": "4",
+    "name": "Tools/best practices"
+},
+{
+    "id": "5",
+    "name": "Front End Development"
+},
+{
+    "id": "6",
+    "name": "Database"
+}
+]

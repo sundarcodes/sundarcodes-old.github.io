@@ -1,0 +1,30 @@
+$primary-font-family: 'Open Sans', sans-serif;
+$cursive-font-family: 'Covered By Your Grace', cursive;
+$primary-font-color:#d35400;
+$link-font-color: #fff;
+$white: #fff;
+
+@mixin vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin horizontal-center {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin vertical-horizontal-center {
+  position: relative;
+  left: 50%;
+  top:50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+footer{
+  position: absolute;
+  bottom: 2vh;
+  color: #fff;
+}
