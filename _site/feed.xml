@@ -6,9 +6,24 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 25 Oct 2015 08:37:27 +0530</pubDate>
-    <lastBuildDate>Sun, 25 Oct 2015 08:37:27 +0530</lastBuildDate>
+    <pubDate>Sun, 25 Oct 2015 08:48:22 +0530</pubDate>
+    <lastBuildDate>Sun, 25 Oct 2015 08:48:22 +0530</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Python Vs Ruby</title>
+        <description>To be updated during the course of bootcamp..once I get to know Ruby well and match it against Python
+</description>
+        <pubDate>Sun, 25 Oct 2015 21:42:21 +0530</pubDate>
+        <link>http://yourdomain.com/jekyll/update/2015/10/25/python-vs-ruby.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2015/10/25/python-vs-ruby.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>Life@CodeAstra</title>
