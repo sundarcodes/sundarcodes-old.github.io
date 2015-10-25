@@ -4,23 +4,26 @@
     <title>Your awesome title</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://yourdomain.com/portfolio/</link>
-    <atom:link href="http://yourdomain.com/portfolio/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 21 Oct 2015 16:31:27 +0530</pubDate>
-    <lastBuildDate>Wed, 21 Oct 2015 16:31:27 +0530</lastBuildDate>
+    <link>http://yourdomain.com/</link>
+    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 25 Oct 2015 08:37:27 +0530</pubDate>
+    <lastBuildDate>Sun, 25 Oct 2015 08:37:27 +0530</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Life@CodeAstra</title>
-        <description>Absolutely loving every minute of this boot camp.. For a guy who was looking for some time to invest on himself in becoming a better programmer,
-this is a blessing..It was just what I wanted. Knowing your data structures, algorithms is the first and most essential step in becoming a quality
-developer, no matter whatever technology or language you are working on. Hackerrank, Codility are excellent for this..
+        <description>&lt;p&gt;Absolutely loving every minute of this boot camp.. For a guy who was looking for some time to invest on himself in becoming a better programmer,
+this is a blessing..It was just what I wanted. Each one gets a curriculum designed to match his/her interests and finally alligned to make you a better progammer and a web app developer.
+&lt;/p&gt;
+&lt;h3&gt;So where do we get started to become better programmers ? &lt;/h3&gt;
+&lt;p&gt; Knowing your data structures and algorithms is the first and most essential step in becoming a quality developer, no matter whatever technology or language you are working on. Hackerrank, Codility are excellent for this..Hackerrank is a good place to get your hands dirty and they have a ranking concept to keep you on your toes. More you solve, higher the rankings. Hackerrank has a very good collection of problems across variuos domains especially in the alogorithm and data structures section. Codility is like a tough nut to crack. Not only they expect your solution to be right for all cases, but they also want it to fit in the worse case Time and Space Complexity they specify. So its taking your solutions to the next level where they check how efficient it is in terms of time and space management. &lt;/p&gt;
+&lt;p&gt;The idea behind knowing your algorithms and data structures is not to just clear the interviews and to show that you know it, its all about learning the essence of the technique used in desiging the algorithm. This will help us in giving us different techniques to approach a problem. If you look at the quick sort or merge sort problem, they are based on breaking a problem into smaller pieces and solving them recursively. This technique called Divide and Conquer can be applied to lot of other cases in real-life. &lt;/p&gt;
 
-To be updated..
+&lt;strong&gt;Bottom Line&lt;/strong&gt;: &lt;em&gt;Know your algorithms and data structures first !! &lt;/em&gt;
 </description>
         <pubDate>Wed, 21 Oct 2015 21:42:21 +0530</pubDate>
-        <link>http://yourdomain.com/portfolio/jekyll/update/2015/10/21/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/portfolio/jekyll/update/2015/10/21/welcome-to-jekyll.html</guid>
+        <link>http://yourdomain.com/jekyll/update/2015/10/21/life-@-CodeAstra.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2015/10/21/life-@-CodeAstra.html</guid>
         
         
         <category>jekyll</category>
@@ -50,8 +53,8 @@ Check out the [Jekyll docs][jekyll] for more info on how to get the most out of 
 [jekyll-help]: https://github.com/jekyll/jekyll-help
 </description>
         <pubDate>Fri, 16 Oct 2015 16:42:21 +0530</pubDate>
-        <link>http://yourdomain.com/portfolio/jekyll/update/2015/10/16/life-@-CodeAstra.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/portfolio/jekyll/update/2015/10/16/life-@-CodeAstra.html</guid>
+        <link>http://yourdomain.com/jekyll/update/2015/10/16/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2015/10/16/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
@@ -68,11 +71,11 @@ So what is Object Oriented programming ?
 It is an approach towards designing a solution to a problem by modelling to the problem context.In other words, you would be designing the solution to a problem by actually identifying the participants, their interactions and having them as objects in your design. Your design should replicate what the objects in the problem should/can do.
 
 Let us take an example :
-Problem Context : 
+Problem Context :
 </description>
         <pubDate>Mon, 12 Oct 2015 15:44:43 +0530</pubDate>
-        <link>http://yourdomain.com/portfolio/jekyll/update/2015/10/12/object-oriented-programming.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/portfolio/jekyll/update/2015/10/12/object-oriented-programming.html</guid>
+        <link>http://yourdomain.com/jekyll/update/2015/10/12/object-oriented-programming.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2015/10/12/object-oriented-programming.html</guid>
         
         
         <category>jekyll</category>

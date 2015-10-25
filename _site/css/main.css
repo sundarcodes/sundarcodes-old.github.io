@@ -129,6 +129,9 @@ h3 a {
   display: inline-block;
   background-size: contain;
   background-repeat: no-repeat;
-  /* background-position: 0% 20%; */
-  height: 2em;
-  width: 2em; }
+  /* background-position: 0% 20%; */ }
+
+#post {
+  height: 100vh;
+  width: 100vw;
+  padding: 0; }

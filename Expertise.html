@@ -38,9 +38,7 @@ id: expertise
               {% if skill.skill_category_id == category.id %}
               <li class="list-group-item" >
                 <i class="{{skill.icon_class_name}} devicon-size">
-                </i>
-                {{skill.skill_name}}
-              </li>
+                </i>{{skill.skill_name}}</li>
               {% endif %}
             {% endfor %}
         </ul>
