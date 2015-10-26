@@ -6,9 +6,37 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 25 Oct 2015 08:48:22 +0530</pubDate>
-    <lastBuildDate>Sun, 25 Oct 2015 08:48:22 +0530</lastBuildDate>
+    <pubDate>Mon, 26 Oct 2015 22:59:47 +0530</pubDate>
+    <lastBuildDate>Mon, 26 Oct 2015 22:59:47 +0530</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Is Javascript Asynchronous ?</title>
+        <description>&lt;p&gt;I was really puzzled when I came across the term - &quot;Asynchronous Javascript&quot;.. WTF I know Javascript engine is a single threaded environment
+where only one task is executed at a time..But when I saw so many articles on this and in particular lot of frameworks/runtimes like node.js,io.js relying on the asynchronous bahviour provided by Javascript, I really wanted to dig further and understand how a single thread can work asynchronously or in a concurrent fashion but still maintaining the sequencing and dependencies of the executing statements. &lt;/p&gt;
+
+&lt;p&gt;Few responses in stackoverflow did answer my queries but I was still not convinced 100%. I had a very simple question in my mind -- Assume I have the following javascript snippet &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;callBack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;In call back&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;setTimeOut&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;callBack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;After call Back&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The output of the program as expected would be &quot;After call Back&quot; followed by &quot;In call back&quot;. Everyone who have programmed Javascript would know that setTimeout() takes a callback function and executes it after the timeout interval specified has ellapsed. The callback is called after 3 seconds (3000 ms) has passed. I understood that there will be an event triggered at the end 3 seconds and the call back would be executed by the javascript runtime. I first thougt javascript would have a timer mechanism built inside the setTimeout() function code and it will trigger the call back function after it had expired.&lt;/p&gt;
+
+&lt;p&gt; My doubt was which part of the Javascript engine would handle the timing out functionality as I know the main thread (or &quot;The Thread&quot;) of the JS engine would not do this as it is not going to block.I was very interested to look at the setTimeOut functionality source code but couldn&#39;t find it. My curiousity was killing me and I landed upon this heck of an video which had answers to all that was running on my mind... Thanks &lt;a href=&quot;https://www.youtube.com/watch?v=8aGhZQkoFbQ&quot;&gt;Philip Roberts&lt;/a&gt;..You had made my day :) &lt;/p&gt;
+</description>
+        <pubDate>Mon, 26 Oct 2015 21:42:21 +0530</pubDate>
+        <link>http://yourdomain.com/jekyll/update/2015/10/26/is-javascript-asynchronous.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2015/10/26/is-javascript-asynchronous.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>Python Vs Ruby</title>

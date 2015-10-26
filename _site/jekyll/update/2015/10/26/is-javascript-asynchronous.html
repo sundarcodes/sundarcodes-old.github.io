@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Is Javascript Asynchronous ?</title>
+  <meta name="description" content="This is yet another wierd part of javascript..Javascript engine is a single threaded process that executes one task at a time.. Then how the hell could javas...">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="/js/expertise.js"></script>
+  <script src="/js/blogs.js"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/89f2f44ba07ea3fff7e561c2142813b278c2d6c6/devicon.min.css">
+  <link rel="canonical" href="http://yourdomain.com/jekyll/update/2015/10/26/is-javascript-asynchronous.html">
+  <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://yourdomain.com/feed.xml" />
+</head>
+
+  <body>
+    <div class="container" id="post">
+      <header class="site-header">
+  <nav class="navbar navbar-inverse navbar-inner navbar-static-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" id="brandName" href="/">Sundar</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+      <li><a href="/about/">About Me</a></li>
+    
+  
+
+  
+    
+      <li><a href="/projects/">My Projects</a></li>
+    
+  
+
+  
+    
+      <li><a href="/expertise/">My Expertise</a></li>
+    
+  
+
+  
+    
+      <li><a href="/blog/">My Blogs</a></li>
+    
+  
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <div class="post container-fluid">
+
+  <header class="post-header">
+    <h1 class="post-title">Is Javascript Asynchronous ?</h1>
+    <p class="post-meta">Oct 26, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <p>I was really puzzled when I came across the term - "Asynchronous Javascript".. WTF I know Javascript engine is a single threaded environment
+where only one task is executed at a time..But when I saw so many articles on this and in particular lot of frameworks/runtimes like node.js,io.js relying on the asynchronous bahviour provided by Javascript, I really wanted to dig further and understand how a single thread can work asynchronously or in a concurrent fashion but still maintaining the sequencing and dependencies of the executing statements. </p>
+
+<p>Few responses in stackoverflow did answer my queries but I was still not convinced 100%. I had a very simple question in my mind -- Assume I have the following javascript snippet </p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">callBack</span><span class="p">(){</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;In call back&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">setTimeOut</span><span class="p">(</span><span class="mi">3000</span><span class="p">,</span><span class="nx">callBack</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;After call Back&quot;</span><span class="p">);</span></code></pre></div>
+
+<p>The output of the program as expected would be "After call Back" followed by "In call back". Everyone who have programmed Javascript would know that setTimeout() takes a callback function and executes it after the timeout interval specified has ellapsed. The callback is called after 3 seconds (3000 ms) has passed. I understood that there will be an event triggered at the end 3 seconds and the call back would be executed by the javascript runtime. I first thougt javascript would have a timer mechanism built inside the setTimeout() function code and it will trigger the call back function after it had expired.</p>
+
+<p> My doubt was which part of the Javascript engine would handle the timing out functionality as I know the main thread (or "The Thread") of the JS engine would not do this as it is not going to block.I was very interested to look at the setTimeOut functionality source code but couldn't find it. My curiousity was killing me and I landed upon this heck of an video which had answers to all that was running on my mind... Thanks <a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ">Philip Roberts</a>..You had made my day :) </p>
+
+  </article>
+
+</div>
+
+<footer class="container">
+  &copy; Sundar 2015
+</footer>
+
+
+    </div>
+  </body>
+</html>

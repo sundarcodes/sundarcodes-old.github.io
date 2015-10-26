@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "Is Javascript Asynchronous ?"
+date:   2015-10-26 16:12:21
+categories: jekyll update
+image: "/images/blogs/javascript.jpg"
+excerpt: "This is yet another wierd part of javascript..Javascript engine is a single threaded process that executes one task at a time.. Then how the hell could javascript exhibit
+characteristics of a asynchronous model of working where tasks run concurrently and independently without waiting for one another."
+---
+
+<p>I was really puzzled when I came across the term - "Asynchronous Javascript".. WTF I know Javascript engine is a single threaded environment
+where only one task is executed at a time..But when I saw so many articles on this and in particular lot of frameworks/runtimes like node.js,io.js relying on the asynchronous bahviour provided by Javascript, I really wanted to dig further and understand how a single thread can work asynchronously or in a concurrent fashion but still maintaining the sequencing and dependencies of the executing statements. </p>
+
+<p>Few responses in stackoverflow did answer my queries but I was still not convinced 100%. I had a very simple question in my mind -- Assume I have the following javascript snippet </p>
+
+{% highlight javascript %}
+function callBack(){
+  console.log("In call back");
+}
+setTimeOut(3000,callBack);
+console.log("After call Back");
+{% endhighlight %}
+
+<p>The output of the program as expected would be "After call Back" followed by "In call back". Everyone who have programmed Javascript would know that setTimeout() takes a callback function and executes it after the timeout interval specified has ellapsed. The callback is called after 3 seconds (3000 ms) has passed. I understood that there will be an event triggered at the end 3 seconds and the call back would be executed by the javascript runtime. I first thougt javascript would have a timer mechanism built inside the setTimeout() function code and it will trigger the call back function after it had expired.</p>
+
+<p> My doubt was which part of the Javascript engine would handle the timing out functionality as I know the main thread (or "The Thread") of the JS engine would not do this as it is not going to block.I was very interested to look at the setTimeOut functionality source code but couldn't find it. My curiousity was killing me and I landed upon this heck of an video which had answers to all that was running on my mind... Thanks <a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ">Philip Roberts</a>..You had made my day :) </p>
